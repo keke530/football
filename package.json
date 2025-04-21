@@ -1,0 +1,12 @@
+{
+  "name": "football-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
