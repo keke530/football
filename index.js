@@ -4,8 +4,8 @@ const fetch = require('node-fetch');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-const API_KEY = '80b2bf0b90864d449a2ddf35c59462bb';
+const PORT = process.env.PORT || 1000;
+const API_KEY = process.env.API_KEY;
 const BASE_URL = 'http://api.football-data.org/v4';
 
 app.use(cors());
