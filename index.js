@@ -5,15 +5,11 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const API_KEY = process.env.API_KEY;
+const API_KEY = '80b2bf0b90864d449a2ddf35c59462bb';
 const BASE_URL = 'http://api.football-data.org/v4';
 
 app.use(cors());
 
-const express = require('express');
-const fetch = require('node-fetch');
-const app = express();
-const port = process.env.PORT || 3000;
 
 // Rota para a raiz "/"
 app.get('/', (req, res) => {
