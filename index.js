@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const API_KEY = process.env.API_KEY;
-const BASE_URL = 'https://api.football-data.org/v4';
+const BASE_URL = 'http://api.football-data.org/v4';
 
 app.use(cors());
 
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 // Definindo o endpoint /competitions
 app.get('/competitions', async (req, res) => {
   try {
-    const response = await fetch('https://api.football-data.org/v4/competitions/', {
+    const response = await fetch('http://api.football-data.org/v4/competitions/', {
       headers: { 'X-Auth-Token': process.env.API_KEY }
     });
 
